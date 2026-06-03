@@ -1,0 +1,94 @@
+/* =========================
+   GLOBAL LAYOUT (CLIENT STYLE)
+========================= */
+
+html {
+    background-color: #000 !important;
+}
+
+body {
+    width: 100%;
+    max-width: 1100px;
+
+    margin-left: 20px;   /* LEFT aligned (important) */
+    margin-right: 0;
+
+    background-color: #000 !important;
+    color: #fff !important;
+
+    font-family: Tahoma, Arial, sans-serif !important;
+    font-size: 16px;
+    line-height: 1.5;
+
+    padding-right: 20px;
+}
+
+
+/* =========================
+   CONTENT CONTROL
+========================= */
+
+p {
+    margin: 6px 0;
+    max-width: 1000px;   /* readable text width */
+}
+
+table {
+    max-width: 100% !important;
+}
+
+
+/* =========================
+   FIX OLD INLINE WIDTHS
+========================= */
+
+/* Remove fixed width from old pages */
+p[style*="width"],
+table[style*="width"] {
+    width: auto !important;
+    max-width: 100% !important;
+}
+
+
+/* =========================
+   HEADINGS FIX
+========================= */
+
+strong > span.style40,
+strong > span.style53,
+.auto-style11,
+.style49 {
+    display: block;
+    margin: 20px 0 8px 0;
+}
+
+
+/* =========================
+   IMAGE FIX
+========================= */
+
+/*img {*/
+/*    max-width: 100%;*/
+/*    height: auto;*/
+/*    display: block;*/
+/*}*/
+
+/* Fix floated images */
+/*img[style*="float"] {*/
+/*    margin: 5px 15px 10px 0;*/
+/*}*/
+
+
+/* =========================
+   LINKS
+========================= */
+
+a {
+    color: #FF9933 !important;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FFFF00 !important;
+    text-decoration: underline;
+}

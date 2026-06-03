@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MODISH GROUP OF INSTITUTIONS - Pride In Excellence</title>
+    <meta name="description" content="Modish Group of Institutions - Excellence in Education">
+    <link rel="icon" href="favicon.png" type="image/png">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <i data-lucide="graduation-cap"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>MODISH GROUP</h1>
+                    <p>Pride In Excellence</p>
+                </div>
+            </a>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li class="dropdown">
+                    <a href="#institutions" class="nav-link">Our Institutions</a>
+                    <div class="dropdown-content">
+                        <a href="https://aerp.modishgroup.org/" target="_blank" class="dropdown-item">AERP</a>
+                        <a href="https://mip.modishgroup.org/" target="_blank" class="dropdown-item">MIP</a>
+                        <a href="https://mps.modishgroup.org/" target="_blank" class="dropdown-item">MPSH</a>
+                        <a href="https://mpss.modishgroup.org/" target="_blank" class="dropdown-item">MPSS</a>
+                        <a href="https://mpspunhana.modishgroup.org/" target="_blank" class="dropdown-item">MPS Punhana</a>
+                        <a href="https://mpsp.modishgroup.org/" target="_blank" class="dropdown-item">MPSP</a>
+                        <a href="https://sdvnschool.in/" target="_blank" class="dropdown-item">SDVN</a>
+                        <a href="https://shishusadan.modishgroup.org/" target="_blank" class="dropdown-item">Shishu Sadan</a>
+                        <a href="https://motherslap.modishgroup.org/" target="_blank" class="dropdown-item">Mother's Lap</a>
+                    </div>
+                </li>
+                <a href="#contact" class="contact-btn">
+                    <i data-lucide="phone"></i>
+                    Contact Us
+                </a>
+            </ul>
+
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i data-lucide="menu" id="menuIcon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-slider">
+            <div class="hero-slide active">
+                <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1920&h=1080&fit=crop" alt="Education">
+            </div>
+            <div class="hero-slide">
+                <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=1920&h=1080&fit=crop" alt="Students">
+            </div>
+            <div class="hero-slide">
+                <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=1920&h=1080&fit=crop" alt="Classroom">
+            </div>
+            <div class="hero-slide">
+                <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1920&h=1080&fit=crop" alt="Campus">
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+
+        <button class="slider-arrow prev" onclick="changeSlide(-1)">
+            <i data-lucide="chevron-left"></i>
+        </button>
+        <button class="slider-arrow next" onclick="changeSlide(1)">
+            <i data-lucide="chevron-right"></i>
+        </button>
+
+        <div class="hero-content">
+            <div class="hero-inner">
+                <div class="hero-badge">
+                    <i data-lucide="award"></i>
+                    Excellence in Education Since 1995
+                </div>
+                <h1>
+                    MODISH GROUP OF<br>
+                    <span class="gradient-text">INSTITUTIONS</span>
+                </h1>
+                <p>Pride In Excellence. Shaping minds, building character, and creating future leaders through world-class education.</p>
+                <div class="hero-buttons">
+                    <a href="#institutions" class="btn-primary">
+                        <i data-lucide="graduation-cap"></i>
+                        Explore Our Institutions
+                    </a>
+                    <a href="#contact" class="btn-secondary">
+                        Get in Touch
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <div class="hero-stat-value">9+</div>
+                        <div class="hero-stat-label">Institutions</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-value">28+</div>
+                        <div class="hero-stat-label">Years of Excellence</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-value">10K+</div>
+                        <div class="hero-stat-label">Students Guided</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slider-controls">
+            <div class="slider-dot active" onclick="setSlide(0)"></div>
+            <div class="slider-dot" onclick="setSlide(1)"></div>
+            <div class="slider-dot" onclick="setSlide(2)"></div>
+            <div class="slider-dot" onclick="setSlide(3)"></div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon" style="background: linear-gradient(135deg, #7C3AED, #5B21B6);">
+                        <i data-lucide="graduation-cap" style="color: white;"></i>
+                    </div>
+                    <div class="stat-value">9+</div>
+                    <div class="stat-label">Educational Institutions</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon" style="background: linear-gradient(135deg, #F59E0B, #D97706);">
+                        <i data-lucide="users" style="color: white;"></i>
+                    </div>
+                    <div class="stat-value">10,000+</div>
+                    <div class="stat-label">Students Empowered</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon" style="background: linear-gradient(135deg, #3B82F6, #1D4ED8);">
+                        <i data-lucide="book-open" style="color: white;"></i>
+                    </div>
+                    <div class="stat-value">500+</div>
+                    <div class="stat-label">Expert Faculty Members</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon" style="background: linear-gradient(135deg, #10B981, #059669);">
+                        <i data-lucide="award" style="color: white;"></i>
+                    </div>
+                    <div class="stat-value">28+</div>
+                    <div class="stat-label">Years of Excellence</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Institutions Section -->
+    <section class="section" id="institutions">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <i data-lucide="school"></i>
+                    Our Network
+                </div>
+                <h2 class="section-title">
+                    Our <span class="gradient-text">Institutions</span>
+                </h2>
+                <p class="section-description">
+                    A diverse network of educational institutions serving students from preschool to advanced research programs
+                </p>
+            </div>
+
+            <div class="institutions-grid">
+                <a href="https://aerp.modishgroup.org/" target="_blank" class="institution-card">
+                    <div class="institution-header" style="background: linear-gradient(135deg, #7C3AED, #5B21B6);">
+                        <div class="institution-icon">
+                            <i data-lucide="school"></i>
+                        </div>
+                        <div class="institution-name">AERP</div>
+                        <div class="institution-fullname">Advanced Educational Research Programs</div>
+                    </div>
+                    <div class="institution-body">
+                        <p class="institution-description">Excellence in research and higher education</p>
+                        <div class="institution-link">
+                            Visit Website
+                            <i data-lucide="external-link"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://mip.modishgroup.org/" target="_blank" class="institution-card">
+                    <div class="institution-header" style="background: linear-gradient(135deg, #3B82F6, #1D4ED8);">
+                        <div class="institution-icon">
+                            <i data-lucide="school"></i>
+                        </div>
+                        <div class="institution-name">MIP</div>
+                        <div class="institution-fullname">Modish International Public School</div>
+                    </div>
+                    <div class="institution-body">
+                        <p class="institution-description">World-class international curriculum</p>
+                        <div class="institution-link">
+                            Visit Website
+                            <i data-lucide="external-link"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://mps.modishgroup.org/" target="_blank" class="institution-card">
+                    <div class="institution-header" style="background: linear-gradient(135deg, #10B981, #059669);">
+                        <div class="institution-icon">
+                            <i data-lucide="school"></i>
+                        </div>
+                        <div class="institution-name">MPSH</div>
+                        <div class="institution-fullname">Modish Public School Haryana</div>
+                    </div>
+                    <div class="institution-body">
+                        <p class="institution-description">Nurturing young minds with care</p>
+                        <div class="institution-link">
+                            Visit Website
+                            <i data-lucide="external-link"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://mpss.modishgroup.org/" target="_blank" class="institution-card">
+                    <div class="institution-header" style="background: linear-gradient(135deg, #EF4444, #B91C1C);">
+                        <div class="institution-icon">
+                            <i data-lucide="school"></i>
+                        </div>
+                        <div class="institution-name">MPSS</div>
+                        <div class="institution-fullname">Modish Public Senior Secondary School</div>
+                    </div>
+                    <div class="institution-body">
+                        <p class="institution-description">Preparing students for future success</p>
+                        <div class="institution-link">
+                            Visit Website
+                            <i data-lucide="external-link"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://mpspunhana.modishgroup.org/" target="_blank" class="institution-card">
+                    <div class="institution-header" style="background: linear-gradient(135deg, #F59E0B, #D97706);">
+                        <div class="institution-icon">
+                            <i data-lucide="school"></i>
+                        </div>
+                        <div class="institution-name">MPS Punhana</div>
+                        <div class="institution-fullname">Modish Public School Punhana</div>
+                    </div>
+                    <div class="institution-body">
+                        <p class="institution-description">Quality education in rural areas</p>
+                        <div class="institution-link">
+                            Visit Website
+                            <i data-lucide="external-link"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://mpsp.modishgroup.org/" target="_blank" class="institution-card">
+                    <div class="institution-header" style="background: linear-gradient(135deg, #EC4899, #BE185D);">
+                        <div class="institution-icon">
+                            <i data-lucide="school"></i>
+                        </div>
+                        <div class="institution-name">MPSP</div>
+                        <div class="institution-fullname">Modish Public School Primary</div>
+                    </div>
+                    <div class="institution-body">
+                        <p class="institution-description">Strong foundation for young learners</p>
+                        <div class="institution-link">
+                            Visit Website
+                            <i data-lucide="external-link"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://sdvnschool.in" target="_blank" class="institution-card">
+                    <div class="institution-header" style="background: linear-gradient(135deg, #6366F1, #4F46E5);">
+                        <div class="institution-icon">
+                            <i data-lucide="school"></i>
+                        </div>
+                        <div class="institution-name">SDVN</div>
+                        <div class="institution-fullname">Saraswati Devi Vidya Niketan</div>
+                    </div>
+                    <div class="institution-body">
+                        <p class="institution-description">Traditional values with modern education</p>
+                        <div class="institution-link">
+                            Visit Website
+                            <i data-lucide="external-link"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://shishusadan.modishgroup.org/" target="_blank" class="institution-card">
+                    <div class="institution-header" style="background: linear-gradient(135deg, #F97316, #C2410C);">
+                        <div class="institution-icon">
+                            <i data-lucide="baby"></i>
+                        </div>
+                        <div class="institution-name">Shishu Sadan</div>
+                        <div class="institution-fullname">Shishu Sadan Preschool</div>
+                    </div>
+                    <div class="institution-body">
+                        <p class="institution-description">Early childhood development center</p>
+                        <div class="institution-link">
+                            Visit Website
+                            <i data-lucide="external-link"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://motherslap.modishgroup.org/" target="_blank" class="institution-card">
+                    <div class="institution-header" style="background: linear-gradient(135deg, #14B8A6, #0D9488);">
+                        <div class="institution-icon">
+                            <i data-lucide="heart"></i>
+                        </div>
+                        <div class="institution-name">Mother's Lap</div>
+                        <div class="institution-fullname">Mother's Lap Play School</div>
+                    </div>
+                    <div class="institution-body">
+                        <p class="institution-description">Loving environment for toddlers</p>
+                        <div class="institution-link">
+                            Visit Website
+                            <i data-lucide="external-link"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chairman Message Section -->
+    <section class="section chairman-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <i data-lucide="quote"></i>
+                    Leadership Message
+                </div>
+                <h2 class="section-title">
+                    Message from the <span class="gradient-text">Chairman</span>
+                </h2>
+            </div>
+
+            <div class="chairman-card">
+                <div class="chairman-image">
+                    <img src="/img/picture.webp?w=800&h=1000&fit=crop" alt="Chairman">
+                    <div class="chairman-image-overlay"></div>
+                    <div class="chairman-info">
+                        <div class="chairman-name">Mr. Praveen Goyal</div>
+                        <div class="chairman-title">Chairman</div>
+                    </div>
+                </div>
+                <div class="chairman-content">
+                    <div class="quote-icon">
+                        <i data-lucide="quote"></i>
+                    </div>
+                    <div class="chairman-message">
+                        <p>
+                            It is a foregone conclusion that <strong>'Educational Institutions are temples of learning'</strong>. It is my firm belief that schools & colleges are meant not only to get children to their dream job but also to help them to be finer human beings of strong character.
+                        </p>
+                        <p>
+                            Students are the nation's most valuable & creative assets. Their imagination is the key for building a great future for our country.
+                        </p>
+                        <p>
+                            The efforts put in our Institutions by the Principal, Teachers & Staff members in shaping & developing the personality is praiseworthy & I am certain it will go a long way in developing the overall personality of our young citizens.
+                        </p>
+                        <p>
+                            So let us all work towards achieving the vision of our students & making them capable in every possible way, so they can take the flight of their life confidently.
+                        </p>
+                        <div class="chairman-signature">
+                            <p>Best Wishes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <i data-lucide="mail"></i>
+                    Get in Touch
+                </div>
+                <h2 class="section-title">
+                    Help and <span class="gradient-text">Support</span>
+                </h2>
+                <p class="section-description">
+                    We value your input. Contact us anytime and we'll reply within 24 hours.
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-card-icon" style="background: linear-gradient(135deg, #7C3AED, #5B21B6);">
+                            <i data-lucide="map-pin" style="color: white;"></i>
+                        </div>
+                        <h3>Visit Us</h3>
+                        <p>
+                            Opposite United India Insurance Company,<br>
+                            Old G T Road, Palwal,<br>
+                            Haryana - 121102
+                        </p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-card-icon" style="background: linear-gradient(135deg, #3B82F6, #1D4ED8);">
+                            <i data-lucide="mail" style="color: white;"></i>
+                        </div>
+                        <h3>Email Us</h3>
+                        <p>
+                            <a href="mailto:contact@modishgroup.org">contact@modishgroup.org</a>
+                        </p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-card-icon" style="background: linear-gradient(135deg, #10B981, #059669);">
+                            <i data-lucide="phone" style="color: white;"></i>
+                        </div>
+                        <h3>Call Us</h3>
+                        <p>
+                            Available Monday - Saturday<br>
+                            9:00 AM - 5:00 PM
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contact-form-card">
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">First Name <span class="required">*</span></label>
+                                <input type="text" name="firstname" class="form-input" placeholder="John" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Last Name <span class="required">*</span></label>
+                                <input type="text" name="lastname" class="form-input" placeholder="Doe" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">Email <span class="required">*</span></label>
+                                <input type="email" name="email" class="form-input" placeholder="john@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Mobile <span class="required">*</span></label>
+                                <input type="tel" name="mobile" class="form-input" placeholder="+91 98765 43210" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Message <span class="required">*</span></label>
+                            <textarea name="message" class="form-textarea" placeholder="Tell us about your inquiry..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn" id="submitBtn">
+                            <i data-lucide="send"></i>
+                            Send Message
+                        </button>
+
+                        <p style="text-align: center; color: #6b7280; font-size: 0.875rem; margin-top: 1rem;">
+                            By submitting this form, you agree to our terms and conditions
+                        </p>
+                    </form>
+
+                    <div id="successMessage" class="success-message" style="display: none;">
+                        <div class="success-icon">
+                            <i data-lucide="check-circle-2" style="color: #10B981; width: 40px; height: 40px;"></i>
+                        </div>
+                        <div class="success-title">Thank You!</div>
+                        <p class="success-text">We've received your message and will get back to you within 24 hours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>
+                        <div class="footer-logo-icon">
+                            <i data-lucide="graduation-cap"></i>
+                        </div>
+                        MODISH GROUP
+                    </h3>
+                    <p>
+                        Educational Institutions are temples of learning. We strive to help students become not just job-ready, but also finer human beings of strong character.
+                    </p>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Contact Information</h4>
+                    <div class="footer-contact-item">
+                        <i data-lucide="map-pin"></i>
+                        <p>
+                            Opposite United India Insurance Company,<br>
+                            Old G T Road, Palwal,<br>
+                            Haryana - 121102
+                        </p>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i data-lucide="mail"></i>
+                        <p><a href="mailto:contact@modishgroup.org">contact@modishgroup.org</a></p>
+                    </div>
+                </div>
+
+                <div class="footer-links-section">
+                    <h4>Our Institutions</h4>
+                    <div class="footer-links">
+                        <a href="https://aerp.modishgroup.org/" target="_blank" class="footer-link">AERP</a>
+                        <a href="https://mip.modishgroup.org/" target="_blank" class="footer-link">MIP</a>
+                        <a href="https://mps.modishgroup.org/" target="_blank" class="footer-link">MPSH</a>
+                        <a href="https://mpss.modishgroup.org/" target="_blank" class="footer-link">MPSS</a>
+                        <a href="https://mpspunhana.modishgroup.org/" target="_blank" class="footer-link">MPS Punhana</a>
+                        <a href="https://mpsp.modishgroup.org/" target="_blank" class="footer-link">MPSP</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Modish Group of Institutions. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTopBtn" onclick="scrollToTop()">
+        <i data-lucide="arrow-up"></i>
+    </button>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
