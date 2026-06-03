@@ -554,6 +554,33 @@ body {
     margin-bottom: 1rem;
 }
 
+.institution-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: #f8fafc;
+    border-radius: 12px;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    font-size: 0.85rem;
+    color: #4b5563;
+    line-height: 1.4;
+}
+
+.info-item i {
+    width: 16px;
+    height: 16px;
+    color: var(--primary);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
 .institution-link {
     color: var(--primary);
     font-weight: 600;
